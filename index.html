@@ -25,7 +25,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">About</a>
@@ -37,10 +37,10 @@
                             <a href="#events" class="nav__link">Events</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#memb" class="nav__link active-link">Membership</a>
+                            <a href="#memb" class="nav__link ">Membership</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#chencon" class="nav__link">Chencon</a>
+                            <a href="#events" class="nav__link">Chencon</a>
                         </li>
                         <li class="nav__item">
                             <a href="#news" class="nav__link">Chenlink Newsletter</a>
@@ -49,7 +49,7 @@
                             <a href="#tech" class="nav__link">Technical Resources</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#tech" class="nav__link active-link">Student Corner</a>
+                            <a href="#stu" class="nav__link">Student Corner</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contact</a>
@@ -249,7 +249,7 @@
          
 
             <!--==================== EXPERIENCE ====================-->
-            <section class="experience section">
+            <section class="experience section" id="events">
                 <h2 class="section__title">Events <br></h2>
 
                 <div class="experience__container container grid">
@@ -278,16 +278,6 @@
                     </div>
 
                    
-
-                    <div class="experience__img grid">
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
-                        </div>
-                      
-                        <div class="experience__overlay">
-                            <img src="assets/img/experience2.png" alt="" class="experience__img-two">
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -296,12 +286,26 @@
                 <h2 class="section__title">Memberships</h2>
 
                 <div class="video__container container">
-                    <p class="video__description">The IETE membership is available at different levels based on the applicants' academic qualifications and practical experience in electronics, telecommunications, computers, information technology and related areas.IETE Student Forum arranges frequent meetings of student members together with experts / academic / R & D / industry leaders as well as IETE centre’s executive committee members. Programmers of common interest may also be arranged involving students forum at many institutions in a city, region etc.
-                    </p>
- <br><br><br><br><br><br>
+                    
                     <div class="video__content">
                         
  <ul class="cards">
+     
+     
+     
+     <li class="card cards__item"><br>
+      <div class="card__frame">
+        <div class="card__picture">
+         <img src="https://image.flaticon.com/icons/svg/478/478543.svg" alt="" width="120">
+        </div>
+        <h2 class="card__title">Why our membership?</h2>
+      </div>
+      <div class="card__overlay"></div>
+      <div class="card__content">
+          <h5>The IETE membership is available at different levels based on the applicants' academic qualifications and practical experience in electronics, telecommunications, computers, information technology and related areas. </h5>
+      </div>
+    </li>
+     
     <li class="card cards__item"><br>
       <div class="card__frame">
         <div class="card__picture">
@@ -335,17 +339,39 @@
 10. Diploma Member (DipIETE Passout) (DIP)</h5>
       </div>
     </li>
+     
+     <li class="card cards__item"><br>
+      <div class="card__frame">
+        <div class="card__picture">
+         <img src="https://image.flaticon.com/icons/svg/478/478543.svg" alt="" width="120">
+        </div>
+        <h2 class="card__title">How to register?</h2>
+      </div>
+      <div class="card__overlay"></div>
+      <div class="card__content">
+        <h5>Click on the link :<br><br>
+
+1.Corporate Member<br><br>
+2.Chartered Engineer<br><br>
+
+3.Organisational Member<br><br>
+
+4.AMIETE<br><br>
+
+            5.DIPIETE<br></h5>
+      </div>
+    </li>
                         <style>
 
 
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 32px;
   margin: 0;
   padding: 0;
-   
+   width:280px;
   list-style: none;
 }
 
@@ -357,11 +383,10 @@
   position: relative;
   display: flex;
   align-items: center;
-    width:220px;
   justify-content: center;
   background-color: #000000;
-  
-  &::before {
+                            }
+  .card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -373,18 +398,21 @@
     pointer-events: none;
   }
   
-  &:nth-child(1) {
-    background-image: linear-gradient(45deg, #3503ad, #f7308c);
+  .card:nth-child(1) {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
   }
   
-  &:nth-child(2) {
-    background-image: linear-gradient(45deg, #ccff00, #09afff);
-  }
+  .card:nth-child(2) {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
   
-  &:nth-child(3) {
-    background-image: linear-gradient(45deg, #e91e63, #ffeb3b);
-  }
 }
+    .card:nth-child(3) & {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
+  }
+  
+                           .card:nth-child(4) & {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
+    }
 
 .card__frame {
   position: absolute;
@@ -402,13 +430,13 @@
 .card__picture {
   margin-bottom: 12px;
   filter: invert(1);
-  
+                            }
   img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-}
+                            }
 
 .card__title {
   margin: 0;
@@ -426,13 +454,13 @@
   justify-content: center;
   width: 52px;
   height: 52px;
-  background-color: #ffffff;
+  background-color: #a6ff4d;
   border-radius: 50%;
   box-shadow: 0 2px 4px rgba(#000000, 0.2);
   transition: 0.5s;
   cursor: pointer;
-  
-  &::before {
+                            }
+  .card__overlay::before {
     content: "Read";
     font-size: 12px;
     text-transform: uppercase;
@@ -440,8 +468,8 @@
     letter-spacing: 0.02em;
   }
   
-  &:hover,
-  &:focus {
+  .card__overlay:hover,
+  card__frame :focus {
     bottom: 0;
     right: 0;
     width: 100%;
@@ -449,22 +477,30 @@
     box-shadow: none;
     border-radius: 0;
     opacity: 0.9;
-    
-    &::before {
+    }
+    .card__frame ::before {
       content: none;
     }
-  }
+
   
   .card:nth-child(1) & {
-    background-image: linear-gradient(45deg, #3503ad, #f7308c);
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
   }
   
   .card:nth-child(2) & {
-    background-image: linear-gradient(45deg, #ccff00, #09afff);
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
+  }
+                            .card:nth-child(3) & {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
   }
   
+                            .card:nth-child(4) & {
+    background-image: linear-gradient(45deg, #a6ff4d, #408000);
+  }
   
-}
+                            
+  
+
 
 .card__content {
   z-index: 1;
@@ -475,8 +511,8 @@
   box-sizing: border-box;
   pointer-events: none;
   transition: 0s;
-
-.card__overlay:hover ~ & {
+    }
+.card__overlay:hover ~ .card__content {
     opacity: 1;
     visibility: visible;
     transition: 0.2s 0.3s;
@@ -629,14 +665,14 @@
                     
                 </div>
                 <br><br>
-             <h2 class="section__title">Student Corner</h2><br>
+             <h2 class="section__title" id="stu">Student Corner</h2><br>
             <div class="place__container container grid">
                
   <div class="panel">
     <div class="ring">
       <div class="card card1"></div>
       <div class="border">
-        <p class="title">Swathi,<br>Velammal Engineering College</p>
+        <p class="title"><br><br>Swathi,<br>Velammal Engineering College</p>
         <div class="slide">
           <h6 class="para"> I appreciated the interactive activities and real-world examples that helped me grasp the concepts better.</h6>
           
@@ -648,7 +684,7 @@
     <div class="ring">
       <div class="card card2"></div>
       <div class="border">
-        <p class="title">Saranya,<br>Jeppiar College of Engineering</p>
+        <p class="title"><br><br><br>Saranya,<br>Jeppiar College of Engineering</p>
         <div class="slide">
           <h6 class="para">The workshop was incredibly informative and engaging.The facilitator was knowledgeable and approachable, making it a valuable learning experience.</h6>
           
@@ -660,7 +696,7 @@
     <div class="ring">
       <div class="card card3"></div>
       <div class="border">
-        <p class="title">Yokesh,<br>R.M.K College of Engineering and Technology</p>
+        <p class="title"><br><br>Yokesh,<br>R.M.K College of Engineering and Technology</p>
         <div class="slide">
           <h6 class="para">I really enjoyed the event!  The speakers were inspiring, and the activities kept us engaged throughout. I learned a lot and left feeling motivated.</h6>
           
@@ -671,7 +707,7 @@
                 <style>
     .panel{
   height: 270px;
-        margin-left: 40px;
+        margin-left: 60px;
  width: 190px;
         position: relative;
    
@@ -781,8 +817,9 @@ p {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
+text-align: center;
   transition: all 1s;
   top: 0;
 }
@@ -825,8 +862,8 @@ p {
                 <div class="subscribe__bg">
                     <div class="subscribe__container container">
                         <h2 class="section__title subscribe__title">Contact Us</h2>
-                        <p class="subscribe__description"> E-mail us at ietechennai@gmail.com // Call us on 044 2835 0773.
-                        </p>
+                        <div class="subscribe__description"> E-mail us at ietechennai@gmail.com // Call us on 044 2835 0773.
+                        </div>
     
                         <form action="" class="subscribe__form">
                              <input type="text" placeholder="Type message" class="subscribe__input2">
@@ -840,11 +877,11 @@ p {
             </section>
             
             <!--==================== SPONSORS ====================-->
-            <section class="sponsor section">
+            <section class="sponsor section" id="news">
                  <h2 class="section__title">Chenlink Newsletter</h2><br>
                 <div class="sponsor__container container grid">
                    <section class="page-contain">
-  <a href="#" class="data-card">
+  <a href="http://ietechennai.in/assets/pdf/chenlink1_3.pdf" class="data-card">
     <h7>Vol 1, No. 3</h7>
     
     <span class="link-text">
@@ -854,7 +891,7 @@ p {
 </svg>
     </span>
   </a>
-  <a href="#" class="data-card">
+  <a href="http://ietechennai.in/assets/pdf/chenlink1_2.pdf" class="data-card">
     <h7>Vol 1, No. 2</h7>
    
     <span class="link-text">
@@ -864,7 +901,7 @@ p {
 </svg>
     </span>
   </a>
-  <a href="#" class="data-card">
+  <a href="http://ietechennai.in/assets/pdf/chenlink1_1.pdf" class="data-card">
     <h7>Vol 1, No. 1</h7>
    
     <span class="link-text">
@@ -874,9 +911,16 @@ p {
 </svg>
     </span>
   </a><style>
-                       *{
-                           box-sizing: border-box;
-                       }         
+                       .page-contain {
+  display: flex;
+ 
+  
+ align-items: center;
+  justify-content: center;
+ 
+  font-family: 'Open Sans', sans-serif;
+}
+       
 .data-card {
   display: flex;
   flex-direction: column;
@@ -890,7 +934,7 @@ p {
   padding: 2.75em 2.5em;
   box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
   transition: transform .45s ease, background .45s ease;
-  
+                       }
   h7 {
     color: #2E3C40;
     font-size: 3.5em;
@@ -910,40 +954,35 @@ p {
     line-height: 1.2;
     margin: auto 0 0;
     transition: color .45s ease;
-
+                       }
     svg {
       margin-left: .5em;
       transition: transform .6s ease;
-      
+                       }
       path {
         transition: fill .45s ease;
-      }
+      
     }
-  }
   
-  &:hover {
+  
+  .data-card:hover {
     background: #753BBD;
     transform: scale(1.02);
-    
-    h7{
+                       
+   
       color: #FFFFFF;
       border-bottom-color: #A754C4;
     }
 
     .link-text {
       color: #FFFFFF;
-
+                       }
       svg {
         animation: point 1.25s infinite alternate;
-        
+                       }
         path {
           fill: #FFFFFF;
         }
-      }
-    }
-  }
-}
-
 @keyframes point {
   0% {
    transform: translateX(0);
@@ -963,10 +1002,10 @@ p {
             <div class="footer__container container grid">
                 <div class="footer__content grid">
                     <div class="footer__data">
-                        <h3 class="footer__title">Travel</h3>
-                        <p class="footer__description">Travel you choose the <br> destination, 
-                            we offer you the <br> experience.
-                        </p>
+                        <h3 class="footer__title">IETE Chennai</h3>
+                        <div class="footer__description">IETE Chennai centre, <br>No: 37, Conran Smith Road Entrance Peters Road,<br>
+Gopalapuram, Chennai,<br> Tamil Nadu - 600086.
+                        </div><br>
                         <div>
                             <a href="https://www.facebook.com/" target="_blank" class="footer__social">
                                 <i class="ri-facebook-box-fill"></i>
@@ -983,29 +1022,16 @@ p {
                         </div>
                     </div>
     
+
+    
                     <div class="footer__data">
                         <h3 class="footer__subtitle">About</h3>
                         <ul>
                             <li class="footer__item">
-                                <a href="" class="footer__link">About Us</a>
+                                <a href="" class="footer__link">Our Team</a>
                             </li>
                             <li class="footer__item">
-                                <a href="" class="footer__link">Features</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">New & Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Team</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Plan y Pricing</a>
+                                <a href="" class="footer__link">Pricing</a>
                             </li>
                             <li class="footer__item">
                                 <a href="" class="footer__link">Become a member</a>
@@ -1030,9 +1056,10 @@ p {
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                      
+                    <p class="footer__copy">&#169; 2023 Code404. All rigths reserved.</p><br>
                     <div class="footer__terms">
-                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Terms and Agreements</a>
                         <a href="#" class="footer__terms-link">Privacy Policy</a>
                     </div>
                 </div>
