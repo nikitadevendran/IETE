@@ -164,7 +164,7 @@ input {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 2.5rem 0 1.5rem;
+  padding: 1.5rem 0 0.5rem;
 }
 
 .section__title {
@@ -188,7 +188,7 @@ input {
 
 /*=============== HEADER ===============*/
 .header {
-  width: 100%;
+width: 85%;
   position: fixed;
   top: 0;
   left: 0;
@@ -238,7 +238,7 @@ input {
 .nav__list {
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
+  row-gap: 1 rem;
 }
 
 .nav__link {
@@ -453,7 +453,7 @@ input {
   transform: var(--img-scale);
 }
 
-/*=============== DISCOVER ===============*/
+
 .discover__card {
   position: relative;
   width: 400px;
@@ -478,7 +478,9 @@ text-align: center;}
   margin-bottom: var(--mb-0-25);
   font-size:20px;
 }
-
+.discover__container container swiper-container{
+    background-image: url("assets/img/home1.jpg");
+}
 .discover__description {
   display: block;
 
@@ -498,7 +500,7 @@ text-align: center;}
   background-image: none;
 }
 
-/*=============== EXPERIENCE ===============*/
+
 .experience__container {
   row-gap: 2.5rem;
   justify-content: center;
@@ -553,7 +555,7 @@ text-align: center;}
   right: 0;
 }
 
-/*=============== VIDEO ===============*/
+
 .video__container {
   padding-bottom: 0.2rem;
 padding-left: 2px;
@@ -569,7 +571,7 @@ padding-left: 2px;
   width: 100%;
 }
 
-/*=============== PLACES ===============*/
+
 .place__card, .place__img {
   height: 130px;
 }
@@ -644,7 +646,7 @@ padding-left: 2px;
   padding: .75rem 1rem;
 }
 
-/*=============== SUBSCRIBE ===============*/
+
 .subscribe__bg {
   background-color: var(--first-color-second);
   padding: 2.5rem 0;
@@ -678,7 +680,7 @@ padding-left: 2px;
   color: var(--text-color);
 }
 
-/*=============== SPONSORS ===============*/
+
 .sponsor__container {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   justify-items: center;
@@ -834,7 +836,7 @@ padding-left: 2px;
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .video__container {
-    display: grid;
+   
     grid-template-columns: .6fr;
     justify-content: center;
   }
